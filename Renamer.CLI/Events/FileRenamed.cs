@@ -15,6 +15,11 @@ namespace Kenbo.Renamer.CLI.Events
             NewName = newName;
         }
 
+        public override string ToString()
+        {
+            return $"Renamed {OldName} to {NewName}, found in {FilePath}";
+        }
+
         public static FileRenamed Create(string filePath, string oldName, string newName)
         {
             return new FileRenamed(filePath, oldName, newName);

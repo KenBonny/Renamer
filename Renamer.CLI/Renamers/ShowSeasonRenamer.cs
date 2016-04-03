@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using Kenbo.Core.Events;
 using Kenbo.Renamer.CLI.Events;
@@ -7,7 +6,7 @@ using Kenbo.Renamer.CLI.Helpers;
 
 namespace Kenbo.Renamer.CLI.Renamers
 {
-    public class ShowSeasonRenamer : IRenamer
+    internal class ShowSeasonRenamer : IRenamer
     {
         private readonly string _format;
 

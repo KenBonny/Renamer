@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Kenbo.Renamer.CLI.Helpers
 {
-    public static class Identify
+    internal static class Identify
     {
         private static readonly IEnumerable<Regex> SeasonRegexes = new[]
         {
